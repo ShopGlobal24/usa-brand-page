@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopGlobal — Dubai &amp; India HQ'd Distribution Partner for Global Brands Entering MEA &amp; APAC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F1B33;
+    --navy-deep:#0A1224;
+    --paper:#F6F3EC;
+    --paper-soft:#EDE7D8;
+    --gold:#C9962C;
+    --gold-soft:#E4BE6E;
+    --teal:#0E7C86;
+    --teal-soft:#3FA6AE;
+    --ink:#161B26;
+    --slate:#54606E;
+    --cream:#F7F4EC;
+    --line-dark:rgba(247,244,236,0.14);
+    --line-light:rgba(15,27,51,0.12);
+    --disp:'Sora',sans-serif;
+    --body:'Inter',sans-serif;
+    --mono:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--body);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+  h1,h2,h3,h4{font-family:var(--disp);font-weight:600;letter-spacing:-0.01em;color:var(--navy);}
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:flex;align-items:center;gap:10px;
+    margin-bottom:16px;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:var(--body);font-weight:600;font-size:15px;
+    padding:14px 26px;border-radius:3px;
+    border:1px solid transparent;cursor:pointer;
+    transition:transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+  }
+  .btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+  .btn-primary{background:var(--gold);color:var(--navy-deep);}
+  .btn-primary:hover{background:var(--gold-soft);transform:translateY(-1px);}
+  .btn-ghost{background:transparent;color:var(--cream);border-color:var(--line-dark);}
+  .btn-ghost:hover{border-color:var(--cream);}
+  .btn-ghost-dark{background:transparent;color:var(--navy);border-color:var(--line-light);}
+  .btn-ghost-dark:hover{border-color:var(--navy);}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(15,27,51,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-dark);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
+  .logo{display:flex;align-items:center;gap:9px;color:var(--cream);font-family:var(--disp);font-weight:700;font-size:19px;}
+  .logo small{font-family:var(--mono);font-size:11px;color:var(--teal-soft);font-weight:500;margin-left:2px;}
+  .nav-links{display:flex;align-items:center;gap:16px;}
+  .nav-links a{font-size:13.5px;color:var(--cream);opacity:.82;transition:opacity .15s;}
+  .nav-links a:hover{opacity:1;}
+  .nav-actions{display:flex;align-items:center;gap:16px;}
+  .burger{display:none;background:none;border:none;color:var(--cream);cursor:pointer;padding:6px;}
+  @media(max-width:900px){
+    .nav-links{position:fixed;top:76px;left:0;right:0;background:var(--navy);flex-direction:column;align-items:flex-start;gap:0;
+      border-bottom:1px solid var(--line-dark);transform:translateY(-8px);opacity:0;pointer-events:none;transition:all .2s ease;}
+    .nav-links.open{transform:translateY(0);opacity:1;pointer-events:auto;}
+    .nav-links a{width:100%;padding:16px 28px;border-bottom:1px solid var(--line-dark);}
+    .nav-actions .btn-ghost{display:none;}
+    .burger{display:block;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:radial-gradient(ellipse 900px 500px at 18% 20%, rgba(201,150,44,0.16), transparent 60%),
+               radial-gradient(ellipse 800px 500px at 85% 70%, rgba(14,124,134,0.22), transparent 60%),
+               var(--navy);
+    position:relative;overflow:hidden;
+    padding:76px 0 40px;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.02fr 0.98fr;gap:40px;align-items:center;}
+  @media(max-width:980px){.hero-grid{grid-template-columns:1fr;}}
+  .hero h1{color:var(--cream);font-size:clamp(34px,4.6vw,54px);line-height:1.06;letter-spacing:-0.02em;margin-bottom:22px;}
+  .hero h1 em{font-style:normal;color:var(--gold-soft);}
+  .hero p.lead{color:rgba(247,244,236,0.72);font-size:17px;max-width:530px;margin-bottom:32px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px;}
+  .stat-strip{display:grid;grid-template-columns:repeat(4,auto);gap:34px;border-top:1px solid var(--line-dark);padding-top:26px;}
+  @media(max-width:600px){.stat-strip{grid-template-columns:repeat(2,1fr);}}
+  .stat-strip .num{font-family:var(--disp);font-weight:700;font-size:26px;color:var(--cream);}
+  .stat-strip .num span{color:var(--gold);}
+  .stat-strip .label{font-family:var(--mono);font-size:11px;color:rgba(247,244,236,0.55);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
+
+  /* route map */
+  .route-wrap{position:relative;}
+  .route-svg{width:100%;height:auto;}
+  .route-node-label{font-family:var(--mono);font-size:11.5px;fill:rgba(247,244,236,0.82);letter-spacing:.03em;}
+  .route-origin-label{font-family:var(--disp);font-size:14px;font-weight:700;fill:var(--navy-deep);}
+
+  /* ---------- MARQUEE ---------- */
+  .marquee-section{background:var(--navy-deep);border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);padding:20px 0;overflow:hidden;}
+  .marquee-track{display:flex;gap:64px;white-space:nowrap;animation:scroll 28s linear infinite;width:max-content;}
+  @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;}}
+  @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  .marquee-item{font-family:var(--disp);font-weight:600;font-size:19px;color:rgba(247,244,236,0.5);letter-spacing:.02em;display:flex;align-items:center;gap:10px;}
+  .marquee-item::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);}
+
+  /* ---------- SECTION GENERIC ---------- */
+  section{padding:100px 0;}
+  .section-head{max-width:640px;margin-bottom:56px;}
+  .section-head h2{font-size:clamp(28px,3.4vw,40px);line-height:1.12;margin-bottom:16px;}
+  .section-head p{color:var(--slate);font-size:16px;}
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
+
+  /* ---------- TIMELINE (about) ---------- */
+  .timeline-sec{background:var(--paper);}
+  .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line-light);}
+  @media(max-width:900px){.timeline{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.timeline{grid-template-columns:1fr;}}
+  .tl-item{padding:34px 30px;border-right:1px solid var(--line-light);border-bottom:1px solid var(--line-light);position:relative;}
+  .tl-item:last-child{border-right:none;}
+  @media(max-width:900px){.tl-item{border-right:none;}}
+  .tl-year{font-family:var(--mono);font-size:13px;color:var(--teal);letter-spacing:.06em;margin-bottom:12px;display:block;}
+  .tl-item h3{font-size:19px;margin-bottom:10px;}
+  .tl-item p{color:var(--slate);font-size:14.5px;}
+
+  /* offices strip inside about */
+  .offices{margin-top:56px;display:flex;flex-wrap:wrap;gap:14px;}
+  .office-chip{
+    border:1px solid var(--line-light);border-radius:3px;padding:10px 16px;
+    font-family:var(--mono);font-size:12.5px;color:var(--navy);
+    display:flex;align-items:center;gap:8px;background:#fff;
+  }
+  .office-chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);}
+  .office-chip.hq{border-color:var(--gold);}
+  .office-chip.hq::before{background:var(--teal);}
+
+  .entry-sec{background:var(--navy);border-top:1px solid var(--line-dark);}
+  .entry-sec .section-head h2{color:var(--cream);}
+  .entry-sec .section-head p{color:rgba(247,244,236,0.65);}
+
+  /* ---------- MARKETS ---------- */
+  .markets-sec{background:var(--navy);}
+  .markets-sec .section-head h2,.markets-sec .section-head p{color:var(--cream);}
+  .markets-sec .section-head p{color:rgba(247,244,236,0.65);}
+  .market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);}
+  @media(max-width:900px){.market-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:520px){.market-grid{grid-template-columns:1fr;}}
+  .market-cell{background:var(--navy);padding:26px 22px;transition:background .2s;}
+  .market-cell:hover{background:var(--navy-deep);}
+  .market-cell .code{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.1em;margin-bottom:8px;}
+  .market-cell h4{color:var(--cream);font-size:17px;margin-bottom:6px;}
+  .market-cell p{font-size:13px;color:rgba(247,244,236,0.55);}
+  .market-cell-wide{grid-column:1 / -1;}
+  .market-cell.hq{background:var(--navy-deep);}
+  .market-cell.hq .code{color:var(--teal-soft);}
+  .gcc-table{width:100%;border-collapse:collapse;}
+  .gcc-table th{
+    text-align:left;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;
+    color:rgba(247,244,236,0.5);font-weight:500;padding:10px 14px;border-bottom:1px solid var(--line-dark);
+  }
+  .gcc-table td{
+    padding:12px 14px;font-size:14px;color:var(--cream);border-bottom:1px solid var(--line-dark);
+  }
+  .gcc-table td:last-child{color:rgba(247,244,236,0.55);}
+  .gcc-table tr:last-child td{border-bottom:none;}
+  @media(max-width:600px){.gcc-table{font-size:13px;} .gcc-table th,.gcc-table td{padding:9px 8px;}}
+
+  /* ---------- ADVANTAGE CARDS ---------- */
+  .adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line-light);}
+  @media(max-width:980px){.adv-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.adv-grid{grid-template-columns:1fr;}}
+  .adv-card{background:var(--paper);padding:34px 26px;}
+  .adv-card .idx{font-family:var(--mono);font-size:12px;color:var(--teal);margin-bottom:22px;}
+  .adv-card h3{font-size:18px;margin-bottom:10px;line-height:1.25;}
+  .adv-card p{font-size:14px;color:var(--slate);}
+
+  /* ---------- MODELS (services) ---------- */
+  .models-sec{background:var(--paper-soft);}
+  .model-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  @media(max-width:900px){.model-grid{grid-template-columns:1fr;}}
+  .model-card{background:#fff;border:1px solid var(--line-light);border-radius:4px;padding:32px 28px;position:relative;overflow:hidden;}
+  .model-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);}
+  .model-card.teal::before{background:var(--teal);}
+  .model-card h3{font-size:19px;margin-bottom:12px;}
+  .model-card p{color:var(--slate);font-size:14.5px;margin-bottom:18px;}
+  .model-card ul{display:flex;flex-direction:column;gap:8px;}
+  .model-card li{font-size:13.5px;color:var(--ink);display:flex;gap:8px;align-items:flex-start;}
+  .model-card li::before{content:"→";color:var(--gold);flex-shrink:0;font-family:var(--mono);}
+
+  .capabilities{margin-top:60px;}
+  .cap-row{display:grid;grid-template-columns:220px 1fr;gap:30px;padding:26px 0;border-top:1px solid var(--line-light);}
+  @media(max-width:700px){.cap-row{grid-template-columns:1fr;gap:8px;}}
+  .cap-row:last-child{border-bottom:1px solid var(--line-light);}
+  .cap-row h4{font-size:15.5px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--navy);font-weight:500;}
+  .cap-row p{color:var(--slate);font-size:15px;}
+
+  .ai-sec{background:var(--navy);}
+  .ai-sec .section-head h2{color:var(--cream);}
+  .ai-sec .section-head p{color:rgba(247,244,236,0.65);}
+  .ai-banner{border-top:1px solid var(--line-dark);margin-top:54px;padding-top:48px;max-width:680px;}
+  .ai-banner h3{color:var(--cream);font-size:clamp(21px,2.6vw,28px);line-height:1.22;margin-bottom:14px;}
+  .ai-banner p{color:rgba(247,244,236,0.65);font-size:15px;}
+
+  /* ---------- COMPLIANCE ---------- */
+  .compliance-sec{background:var(--paper);}
+  .compliance-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+  @media(max-width:900px){.compliance-grid{grid-template-columns:1fr;gap:32px;}}
+  .checklist{background:#fff;border:1px solid var(--line-light);border-radius:4px;overflow:hidden;}
+  .check-row{display:flex;align-items:center;gap:16px;padding:19px 26px;border-bottom:1px solid var(--line-light);}
+  .check-row:last-child{border-bottom:none;}
+  .check-icon{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;}
+  .check-row span:last-child{font-size:15.5px;color:var(--ink);font-weight:500;}
+
+  /* ---------- MISSION / OFFICES / CTA ---------- */
+  .mission-sec{background:var(--paper-soft);}
+  .mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  @media(max-width:900px){.mission-grid{grid-template-columns:1fr;gap:34px;}}
+  .mission-grid h2{font-size:clamp(26px,3.2vw,36px);margin-bottom:18px;line-height:1.16;}
+  .mission-grid p{color:var(--slate);font-size:15.5px;margin-bottom:16px;}
+
+  .office-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line-light);margin-top:10px;}
+  @media(max-width:820px){.office-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.office-grid{grid-template-columns:1fr;}}
+  .office-card{background:#fff;padding:24px 22px;}
+  .office-card .tag{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.08em;margin-bottom:8px;text-transform:uppercase;}
+  .office-card h4{font-size:16.5px;color:var(--navy);margin-bottom:8px;}
+  .office-card p{font-size:13px;color:var(--slate);line-height:1.5;}
+
+  .cta-banner{background:var(--navy);text-align:center;padding:100px 0;}
+  .cta-banner p.eyebrow{justify-content:center;}
+  .cta-banner h2{color:var(--cream);font-size:clamp(28px,4.4vw,46px);line-height:1.12;max-width:780px;margin:0 auto 34px;}
+  .cta-banner .btn{margin:0 auto;}
+
+  /* ---------- PROCESS ---------- */
+  .process-sec{background:var(--navy);}
+  .process-sec .section-head h2{color:var(--cream);}
+  .process-sec .section-head p{color:rgba(247,244,236,0.65);}
+  .process-list{border-top:1px solid var(--line-dark);}
+  .p-row{display:grid;grid-template-columns:70px 1fr;gap:26px;padding:30px 0;border-bottom:1px solid var(--line-dark);align-items:start;}
+  @media(max-width:700px){.p-row{grid-template-columns:44px 1fr;}}
+  .p-num{font-family:var(--mono);font-size:26px;color:var(--gold);font-weight:500;}
+  .p-row h3{color:var(--cream);font-size:19px;margin-bottom:8px;}
+  .p-row p{color:rgba(247,244,236,0.65);font-size:15px;}
+
+  /* ---------- CONTACT ---------- */
+  .contact-sec{background:var(--paper-soft);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  @media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:34px;}}
+  .contact-info h2{font-size:clamp(26px,3.2vw,36px);margin-bottom:18px;line-height:1.16;}
+  .contact-info p{color:var(--slate);font-size:15.5px;margin-bottom:30px;max-width:440px;}
+  .contact-line{display:flex;flex-direction:column;gap:20px;}
+  .contact-line .k{display:block;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin-bottom:5px;}
+  .contact-line a{font-size:15px;color:var(--navy);}
+  .contact-line a:hover{border-bottom:1px solid var(--navy);}
+  .form{background:#fff;border:1px solid var(--line-light);border-radius:4px;padding:34px;display:flex;flex-direction:column;gap:18px;}
+  .field label{display:block;font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--slate);margin-bottom:8px;}
+  .field input,.field textarea{
+    width:100%;border:1px solid var(--line-light);border-radius:3px;padding:12px 14px;
+    font-family:var(--body);font-size:14.5px;color:var(--ink);background:var(--paper);
+  }
+  .field textarea{min-height:96px;resize:vertical;}
+  .field input:focus,.field textarea:focus{outline:2px solid var(--gold);outline-offset:1px;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--navy-deep);color:rgba(247,244,236,0.72);padding:70px 0 26px;}
+  .foot-top{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid var(--line-dark);}
+  @media(max-width:980px){.foot-top{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.foot-top{grid-template-columns:1fr;}}
+  .foot-brand .logo{margin-bottom:14px;}
+  .foot-brand p{font-size:13.5px;max-width:280px;color:rgba(247,244,236,0.55);}
+  .foot-col h5{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold-soft);margin-bottom:16px;font-weight:500;}
+  .foot-col{display:flex;flex-direction:column;gap:10px;font-size:13.5px;}
+  .foot-col a:hover{color:var(--cream);}
+  .foot-bottom{padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:rgba(247,244,236,0.4);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo">ShopGlobal</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#advantage">Why Us</a>
+      <a href="#market-entry">Market Entry</a>
+      <a href="#ai-ads">AI Ads</a>
+      <a href="#markets">Markets</a>
+      <a href="#models">Services</a>
+      <a href="#compliance">Compliance</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-ghost">Book a call</a>
+      <button class="burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:0;">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Dubai &amp; India-HQ'd distribution partner for global brands · since 2010</p>
+        <h1>Your brand, selling <em>live</em> across the Middle East, India, Singapore, Australia and Japan.</h1>
+        <p class="lead">ShopGlobal is the distribution partner global brands use to launch into five of the world's fastest-growing e-commerce regions, without opening a single office abroad. Run from dual headquarters in Dubai and Mumbai — the gateway to the GCC, India and Asia-Pacific — we already hold the entities, licenses and marketplace relationships on Amazon, Noon, Flipkart, Lazada, Shopee, Catch and Amazon Japan that your brand would otherwise spend years building.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Talk to our team</a>
+          <a href="#process" class="btn btn-ghost">See how it works</a>
+        </div>
+        <div class="stat-strip">
+          <div><div class="num">Dubai + Mumbai</div><div class="label">Dual HQ</div></div>
+          <div><div class="num"><span>5</span></div><div class="label">Target regions</div></div>
+          <div><div class="num"><span>9</span></div><div class="label">Marketplace partners</div></div>
+          <div><div class="num"><span>15</span>yrs</div><div class="label">In e-commerce, since 2010</div></div>
+        </div>
+      </div>
+
+      <div class="route-wrap">
+        <svg class="route-svg" viewBox="0 0 640 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map showing a global brand routed through the Dubai and Mumbai headquarters, with Dubai serving the GCC and Mumbai serving Singapore, Indonesia, Malaysia, Philippines, Australia and Japan">
+          <defs>
+            <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+              <circle cx="1.5" cy="1.5" r="1.2" fill="rgba(247,244,236,0.08)"/>
+            </pattern>
+            <radialGradient id="glowGold" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#C9962C" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#C9962C" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#0E7C86" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#0E7C86" stop-opacity="0"/>
+            </radialGradient>
+            <marker id="arrowGold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#E4BE6E"/>
+            </marker>
+            <marker id="arrowTeal" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#3FA6AE"/>
+            </marker>
+          </defs>
+          <rect width="640" height="700" fill="url(#dots)"/>
+
+          <!-- feed-in routes: brand origin -> Dubai & Mumbai -->
+          <path d="M75,70 Q140,150 205,215" fill="none" stroke="rgba(63,166,174,0.55)" stroke-width="1.4" stroke-dasharray="3 5"/>
+          <path d="M75,70 Q120,240 205,395" fill="none" stroke="rgba(63,166,174,0.55)" stroke-width="1.4" stroke-dasharray="3 5"/>
+
+          <!-- arrow: Dubai -> GCC -->
+          <path d="M215,210 Q340,150 465,105" fill="none" stroke="rgba(228,190,110,0.7)" stroke-width="1.3" marker-end="url(#arrowGold)"/>
+
+          <!-- arrows: Mumbai -> Southeast Asia / ANZ / Japan -->
+          <g fill="none" stroke="rgba(228,190,110,0.7)" stroke-width="1.3">
+            <path d="M225,398 Q350,300 465,235" marker-end="url(#arrowGold)"/>
+            <path d="M225,400 Q355,340 465,310" marker-end="url(#arrowGold)"/>
+            <path d="M225,405 Q355,385 465,390" marker-end="url(#arrowGold)"/>
+            <path d="M225,410 Q350,430 465,470" marker-end="url(#arrowGold)"/>
+            <path d="M225,415 Q345,480 465,550" marker-end="url(#arrowGold)"/>
+            <path d="M225,420 Q335,530 465,630" marker-end="url(#arrowGold)"/>
+          </g>
+
+          <!-- brand origin source node -->
+          <circle cx="75" cy="70" r="22" fill="url(#glowTeal)"/>
+          <circle cx="75" cy="70" r="6" fill="#3FA6AE"/>
+          <text x="75" y="102" text-anchor="middle" class="route-node-label" style="fill:#3FA6AE;font-weight:600;">GLOBAL</text>
+          <text x="75" y="117" text-anchor="middle" class="route-node-label" style="font-size:9.5px;">Your brand</text>
+
+          <!-- hub: Dubai HQ -->
+          <circle cx="210" cy="215" r="30" fill="url(#glowGold)"/>
+          <circle cx="210" cy="215" r="9" fill="#C9962C"/>
+          <circle cx="210" cy="215" r="15" fill="none" stroke="#C9962C" stroke-width="1.2" opacity="0.6"/>
+          <text x="210" y="250" text-anchor="middle" class="route-node-label" style="fill:#E4BE6E;font-weight:600;">DUBAI</text>
+          <text x="210" y="265" text-anchor="middle" class="route-node-label" style="font-size:9.5px;">HQ · UAE</text>
+
+          <!-- hub: Mumbai HQ -->
+          <circle cx="210" cy="400" r="30" fill="url(#glowTeal)"/>
+          <circle cx="210" cy="400" r="9" fill="#3FA6AE"/>
+          <circle cx="210" cy="400" r="15" fill="none" stroke="#3FA6AE" stroke-width="1.2" opacity="0.6"/>
+          <text x="210" y="435" text-anchor="middle" class="route-node-label" style="fill:#3FA6AE;font-weight:600;">MUMBAI</text>
+          <text x="210" y="450" text-anchor="middle" class="route-node-label" style="font-size:9.5px;">HQ · India</text>
+
+          <!-- destination nodes -->
+          <g class="route-node-label">
+            <circle cx="465" cy="105" r="5" fill="#F7F4EC"/><text x="478" y="109">GCC</text>
+            <circle cx="465" cy="235" r="5" fill="#F7F4EC"/><text x="478" y="239">Singapore</text>
+            <circle cx="465" cy="310" r="5" fill="#F7F4EC"/><text x="478" y="314">Indonesia</text>
+            <circle cx="465" cy="390" r="5" fill="#F7F4EC"/><text x="478" y="394">Malaysia</text>
+            <circle cx="465" cy="470" r="5" fill="#F7F4EC"/><text x="478" y="474">Philippines</text>
+            <circle cx="465" cy="550" r="5" fill="#F7F4EC"/><text x="478" y="554">Australia</text>
+            <circle cx="465" cy="630" r="5" fill="#F7F4EC"/><text x="478" y="634">Japan</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">Amazon</span><span class="marquee-item">Noon</span><span class="marquee-item">Namshi</span><span class="marquee-item">Shein</span><span class="marquee-item">Carrefour</span><span class="marquee-item">Trendyol</span><span class="marquee-item">Flipkart</span><span class="marquee-item">Meesho</span><span class="marquee-item">JioMart</span><span class="marquee-item">Blinkit</span><span class="marquee-item">Zepto</span><span class="marquee-item">Swiggy Instamart</span><span class="marquee-item">Lazada</span><span class="marquee-item">Shopee</span><span class="marquee-item">Catch</span><span class="marquee-item">Amazon Japan</span><span class="marquee-item">Jumia</span>
+      <span class="marquee-item">Amazon</span><span class="marquee-item">Noon</span><span class="marquee-item">Namshi</span><span class="marquee-item">Shein</span><span class="marquee-item">Carrefour</span><span class="marquee-item">Trendyol</span><span class="marquee-item">Flipkart</span><span class="marquee-item">Meesho</span><span class="marquee-item">JioMart</span><span class="marquee-item">Blinkit</span><span class="marquee-item">Zepto</span><span class="marquee-item">Swiggy Instamart</span><span class="marquee-item">Lazada</span><span class="marquee-item">Shopee</span><span class="marquee-item">Catch</span><span class="marquee-item">Amazon Japan</span><span class="marquee-item">Jumia</span>
+    </div>
+  </div>
+
+  <!-- ABOUT / TIMELINE -->
+  <section class="timeline-sec" id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">About ShopGlobal</p>
+        <h2>Two headquarters — Dubai and Mumbai. Five regions already built out underneath them.</h2>
+        <p>ShopGlobal is a cross-border e-commerce company built to help global brands enter, launch and scale across the Middle East, India, Singapore, Australia and Japan — without setting up a single entity abroad themselves. Our dual headquarters in Dubai and Mumbai sit at the physical and time-zone midpoint of the GCC, India and Asia-Pacific, and together act as importer and merchant of record, manage regional compliance, and run marketplace operations directly across all five regions. Dedicated sourcing entities in New Jersey and Delaware (USA) and in the United Kingdom let us procure directly from US and European suppliers on your behalf, using partner warehouses and fulfillment centers in both countries to receive, consolidate and quality-check stock before it's freighted onward.</p>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <span class="tl-year">2010</span>
+          <h3>India — HQ</h3>
+          <p>Where ShopGlobal was founded and built its India headquarters, developing the marketplace and fulfillment playbook the network still runs on today.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2016</span>
+          <h3>Dubai — HQ</h3>
+          <p>Incorporated our Dubai entity as a second global headquarters alongside Mumbai, opening direct, licensed access into the UAE, KSA and the wider GCC.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2019</span>
+          <h3>Singapore &amp; Australia</h3>
+          <p>Extended the network east into Southeast Asia and ANZ, adding registered entities in both markets.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2021</span>
+          <h3>Indonesia, Malaysia &amp; Philippines</h3>
+          <p>Expanded regional coverage from our Singapore entity into Indonesia, Malaysia and the Philippines.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2022</span>
+          <h3>Japan</h3>
+          <p>Added Japan through a partner entity, completing the five-region footprint that now radiates from our two HQs.</p>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year">2025</span>
+          <h3>Sourcing Entities</h3>
+          <p>Opened dedicated sourcing entities in New Jersey, Delaware and the UK to procure directly from US and European suppliers, feeding stock into our fulfillment network.</p>
+        </div>
+      </div>
+
+      <div class="offices reveal">
+        <span class="office-chip hq">Dubai, UAE — HQ, registered companies &amp; fulfillment operations</span>
+        <span class="office-chip hq">Mumbai, India — HQ, registered companies &amp; fulfillment operations</span>
+        <span class="office-chip">Singapore — registered companies &amp; fulfillment operations</span>
+        <span class="office-chip">Indonesia, Malaysia &amp; Philippines — regional coverage via Singapore</span>
+        <span class="office-chip">Australia — partner fulfillment operations</span>
+        <span class="office-chip">Japan — partner fulfillment operations</span>
+        <span class="office-chip">New Jersey &amp; Delaware, USA — registered companies, sourcing &amp; fulfillment operations</span>
+        <span class="office-chip">United Kingdom — registered companies, sourcing &amp; fulfillment operations</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission-sec">
+    <div class="wrap mission-grid">
+      <div class="reveal">
+        <p class="eyebrow">Our mission</p>
+        <h2>Give global brands a Middle East, India &amp; APAC sales channel, without the overhead of building one.</h2>
+        <p>ShopGlobal exists so a global brand can go live in Dubai, Riyadh, Mumbai, Singapore, Jakarta, Kuala Lumpur, Manila, Sydney and Tokyo without opening a single foreign entity. We hold the licenses, run the compliance, manage the fulfillment and run the advertising, while your team stays focused on the product back home.</p>
+        <p>Our offices sit close to the markets and marketplaces we operate in, not behind a single head-office desk on the other side of the world — which is what lets your brand's questions get answered by people who actually know the regulator, the marketplace account manager, and the warehouse floor in that country.</p>
+      </div>
+      <div class="reveal">
+        <div class="office-grid">
+          <div class="office-card">
+            <div class="tag">HQ · Registered companies &amp; fulfillment operations</div>
+            <h4>Dubai, UAE</h4>
+            <p>Al Matloob Building, Al Safa 1, Al Safa, Dubai — coordinates your brand's Middle East and GCC program.</p>
+          </div>
+          <div class="office-card">
+            <div class="tag">HQ · Registered companies &amp; fulfillment operations</div>
+            <h4>Mumbai, India</h4>
+            <p>Building no. 8, Solitaire Corporate Park, Chakala, Andheri East, Mumbai — our India headquarters and fulfillment base, coordinating the India and APAC program.</p>
+          </div>
+          <div class="office-card">
+            <div class="tag">Registered companies &amp; fulfillment operations</div>
+            <h4>Singapore</h4>
+            <p>Registered entity covering Southeast Asian operations, including Lazada and Shopee.</p>
+          </div>
+          <div class="office-card">
+            <div class="tag">Regional coverage via Singapore</div>
+            <h4>Indonesia, Malaysia &amp; Philippines</h4>
+            <p>Extended Southeast Asia coverage from our Singapore entity, including Lazada and Shopee.</p>
+          </div>
+          <div class="office-card">
+            <div class="tag">Partner fulfillment operations</div>
+            <h4>Australia</h4>
+            <p>Entity-backed operations covering Amazon, Catch and eBay for the ANZ market.</p>
+          </div>
+          <div class="office-card">
+            <div class="tag">Partner fulfillment operations</div>
+            <h4>Japan</h4>
+            <p>Partner entity-backed operations covering Amazon Japan.</p>
+          </div>
+          <div class="office-card">
+            <div class="tag">Registered companies, sourcing &amp; fulfillment operations</div>
+            <h4>New Jersey &amp; Delaware, USA</h4>
+            <p>Registered entities for direct sourcing from US suppliers, backed by partner warehouses and fulfillment centers for local receiving and consolidation.</p>
+          </div>
+          <div class="office-card">
+            <div class="tag">Registered companies, sourcing &amp; fulfillment operations</div>
+            <h4>United Kingdom</h4>
+            <p>Registered entity for direct sourcing from UK and European suppliers, backed by partner warehouses and fulfillment centers for local receiving and consolidation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKET ENTRY EVALUATION -->
+  <section class="entry-sec" id="market-entry">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Before you launch</p>
+        <h2>Know which of the five regions fits before you spend to enter it.</h2>
+        <p>We evaluate product-market fit against competitors, price points and local consumer behaviour before recommending whether your brand should launch first in the Gulf, India, Singapore, Australia or Japan — so market selection is a data call, not a guess.</p>
+      </div>
+      <div class="market-grid reveal">
+        <div class="market-cell"><div class="code">01</div><h4>Market &amp; category size</h4><p>Sizing the category across all five regions to locate real product-market fit.</p></div>
+        <div class="market-cell"><div class="code">02</div><h4>Competitor analysis</h4><p>Mapping who's already selling, at what price, and how well, in each region.</p></div>
+        <div class="market-cell"><div class="code">03</div><h4>Regulatory &amp; legal factors</h4><p>Import compliance and documentation reviewed before you commit to a market.</p></div>
+        <div class="market-cell"><div class="code">04</div><h4>Target audience &amp; behaviour</h4><p>How local buyers search, compare and decide, region by region.</p></div>
+        <div class="market-cell"><div class="code">05</div><h4>Market trends &amp; dynamics</h4><p>Where the category is heading, not just where it stands today.</p></div>
+        <div class="market-cell"><div class="code">06</div><h4>Demand &amp; supply balance</h4><p>Aligning inventory plans with real demand signals before launch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKETS -->
+  <section class="markets-sec" id="markets">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Where your brand can sell</p>
+        <h2>Five regions, run through entities we already own.</h2>
+        <p>Each region below is covered by a registered ShopGlobal entity or a dedicated strategic partner — so import of record, merchant of record, VAT and local regulatory filings are handled before your first order ships. We also extend regional coverage into Africa through Jumia.</p>
+      </div>
+      <div class="market-grid reveal">
+        <div class="market-cell hq market-cell-wide">
+          <div class="code">UAE · HQ</div>
+          <h4>United Arab Emirates — Dubai HQ</h4>
+          <p style="margin-bottom:16px;">Your brand's Middle East program is run directly out of Dubai. Registered office · Amazon, Noon, Namshi, Shein, Carrefour, Trendyol, Mumzworld &amp; Sharaf DG.</p>
+        </div>
+        <div class="market-cell hq market-cell-wide">
+          <div class="code">IND · HQ</div>
+          <h4>India — Mumbai HQ</h4>
+          <p style="margin-bottom:16px;">Your brand's India and APAC program is coordinated directly out of Mumbai. Registered office · Amazon, Flipkart, Myntra, Meesho, JioMart · Quick commerce: Blinkit, Zepto &amp; Swiggy Instamart.</p>
+        </div>
+        <div class="market-cell"><div class="code">KSA</div><h4>Saudi Arabia</h4><p>Registered office · Amazon, Noon</p></div>
+        <div class="market-cell"><div class="code">SGP</div><h4>Singapore</h4><p>Registered office &amp; partner logistics · Amazon, Lazada, Shopee</p></div>
+        <div class="market-cell"><div class="code">AUS</div><h4>Australia</h4><p>Entity-backed operations · Amazon, Catch, eBay</p></div>
+        <div class="market-cell"><div class="code">JPN</div><h4>Japan</h4><p>Partner entity-backed operations · Amazon Japan.</p></div>
+        <div class="market-cell"><div class="code">AFR</div><h4>Africa</h4><p>Regional coverage via our Dubai entity · Jumia</p></div>
+        <div class="market-cell market-cell-wide">
+          <div class="code">GCC</div>
+          <h4>Other GCC markets</h4>
+          <p style="margin-bottom:16px;">Served through our Dubai and KSA entities, with regional logistics and marketplace access already in place.</p>
+          <table class="gcc-table">
+            <thead>
+              <tr><th>Country</th><th>Coverage</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Bahrain</td><td>Regional coverage via UAE/KSA entities</td></tr>
+              <tr><td>Kuwait</td><td>Regional coverage via UAE/KSA entities</td></tr>
+              <tr><td>Oman</td><td>Regional coverage via UAE/KSA entities</td></tr>
+              <tr><td>Qatar</td><td>Regional coverage via UAE/KSA entities</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="market-cell market-cell-wide">
+          <div class="code">SEA</div>
+          <h4>Other Southeast Asia markets</h4>
+          <p style="margin-bottom:16px;">Served through our Singapore entity, with regional logistics and marketplace access already in place.</p>
+          <table class="gcc-table">
+            <thead>
+              <tr><th>Country</th><th>Coverage</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Indonesia</td><td>Regional coverage via Singapore entity · Lazada, Shopee</td></tr>
+              <tr><td>Malaysia</td><td>Regional coverage via Singapore entity · Amazon, Lazada, Shopee</td></tr>
+              <tr><td>Philippines</td><td>Regional coverage via Singapore entity · Lazada, Shopee</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGE -->
+  <section id="advantage">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The ShopGlobal advantage</p>
+        <h2>What actually moves the needle for a global brand, once you're listed.</h2>
+        <p>Getting a global brand listed abroad is the easy part. These are the systems we run underneath it to keep your brand ranking, in stock, and protected across five regions.</p>
+      </div>
+      <div class="adv-grid reveal">
+        <div class="adv-card">
+          <div class="idx">01</div>
+          <h3>Data-driven merchandising</h3>
+          <p>A technology dashboard tracks competitor pricing and buyer behaviour per region, so listing and pricing decisions from the Gulf to Japan are backed by data, not guesswork. AI-based curation surfaces the right assortment for each market, while automated replenishment keeps stock aligned to real demand.</p>
+        </div>
+        <div class="adv-card">
+          <div class="idx">02</div>
+          <h3>Warehousing &amp; fulfillment</h3>
+          <p>Inventory freighted into our Dubai hub can be redistributed to KSA, India, Singapore, Indonesia, Malaysia, the Philippines, Australia and Japan. On the sourcing side, partner warehouses and fulfillment centers in the US and UK let us consolidate and quality-check stock close to your suppliers before it ever ships. Local warehouse infrastructure and a WMS forecast demand and keep delivery times short. Seller Flex and Vendor Flex facilities feed Amazon fulfillment directly.</p>
+        </div>
+        <div class="adv-card">
+          <div class="idx">03</div>
+          <h3>In-house advertising</h3>
+          <p>Our own team, based in Dubai, runs marketplace ad campaigns (PPC/AMS), SEO and social strategy across every region — a full 360° push for visibility, not a bolt-on agency. Every brand runs off one AI ads dashboard with direct API integrations into each marketplace account.</p>
+        </div>
+        <div class="adv-card">
+          <div class="idx">04</div>
+          <h3>Compliance, end to end</h3>
+          <p>Trademark and product registration, regulatory approvals and import documentation for your brand are handled per region before you're expected to sell a single unit.</p>
+        </div>
+        <div class="adv-card">
+          <div class="idx">05</div>
+          <h3>Relationships that get you heard</h3>
+          <p>Long-standing relationships with marketplaces and regulators across the Gulf, India and Asia-Pacific mean faster approvals, better support, and issues resolved quickly — not stuck in a generic support queue.</p>
+        </div>
+        <div class="adv-card">
+          <div class="idx">06</div>
+          <h3>15+ years of financial integrity: scale internationally with zero settlement risk</h3>
+          <p>Expanding globally requires trust, capital and speed. Since 2010, we have built an unblemished track record of financial reliability — guaranteeing 100% on-time payment settlement within agreed terms, so you can scale into new markets with complete peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI ADVERTISING -->
+  <section class="ai-sec" id="ai-ads">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">AI-driven advertising</p>
+        <h2>An AI engine built specifically for marketplace ads, especially Amazon — run from Dubai across five regions.</h2>
+        <p>ShopGlobal deploys industry-leading AI engines, purpose-built for Amazon, to manage your advertising across the Gulf, India, Singapore, Australia and Japan with a level of precision manual bid management can't match.</p>
+      </div>
+      <div class="process-list reveal">
+        <div class="p-row">
+          <div class="p-num">01</div>
+          <div><h3>Smarter bid placement</h3><p>The AI-powered advertising engine places bids efficiently on the keywords most likely to convert, in each region's own marketplace.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">02</div>
+          <div><h3>Keyword harvesting</h3><p>Past performance data is mined to build campaigns around the keywords that convert best, region by region.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">03</div>
+          <div><h3>Campaign structuring</h3><p>Multiple campaigns are structured to Amazon best practices and optimized continuously with intra-day automation.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">04</div>
+          <div><h3>RoAS optimization</h3><p>Ad spend is tuned to maximize RoAS, visibility and conversions together, not traded off against each other.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">05</div>
+          <div><h3>ASIN-level insights</h3><p>Granular, ASIN-level performance data gives your team what it needs for faster decision-making back in the US.</p></div>
+        </div>
+      </div>
+
+      <div class="ai-banner reveal">
+        <h3>Better Amazon Ads performance. AI-powered from Dubai, out to five regions.</h3>
+        <p>Our ads portal brings together Sponsored Ads, DSP, and Amazon Marketing Cloud in one connected platform. AI runs the execution. You run the strategy from wherever your brand is based.</p>
+      </div>
+
+      <div class="process-list reveal">
+        <div class="p-row">
+          <div class="p-num">06</div>
+          <div><h3>Connect everything on day one</h3><p>Your Sponsored Ads, DSP inventory, and AMC data come together in one place from the moment you go live — no manual reconciliation between tools, no gaps in visibility.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">07</div>
+          <div><h3>Set your strategy and guardrails</h3><p>Define your bid ranges, budget limits, and audience priorities. The engine optimizes within them — no black box, no surprises.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">08</div>
+          <div><h3>AMC builds the intelligence layer</h3><p>Audiences are created, attribution is modeled, and performance signals are generated automatically from your actual AMC data.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">09</div>
+          <div><h3>AI runs your campaigns around the clock</h3><p>Automated actions execute across Sponsored Ads and DSP, 24/7, across every time zone your brand now sells in.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODELS / SERVICES -->
+  <section class="models-sec" id="models">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">How global brands work with us</p>
+        <h2>Pick the model that fits how you already ship.</h2>
+        <p>ShopGlobal works as an exclusive distribution partner for select brands, and as an aggregator bringing a curated brand selection into each region. However your supply chain is set up today, there's a fulfillment model that fits, routed through Dubai.</p>
+      </div>
+      <div class="model-grid reveal">
+        <div class="model-card teal">
+          <h3>Stock with us</h3>
+          <p>Freight merchandise into our Dubai hub, or feed it directly into marketplace fulfillment centers, across every region we operate in — the UAE, KSA, India, Singapore, Indonesia, Malaysia, the Philippines, Australia and Japan.</p>
+          <ul>
+            <li>Shorter delivery timelines to buyers</li>
+            <li>WMS-backed demand forecasting</li>
+            <li>Built for established, repeat SKUs</li>
+          </ul>
+        </div>
+        <div class="model-card">
+          <h3>Ship as you sell</h3>
+          <p>Just-in-time fulfillment. Stock with us in Dubai, and we ship to each of the five regions as orders come in.</p>
+          <ul>
+            <li>No upfront inventory commitment</li>
+            <li>Orders routed to the nearest hub</li>
+            <li>Good fit for testing a new region</li>
+          </ul>
+        </div>
+        <div class="model-card">
+          <h3>Dropship</h3>
+          <p>Keep inventory on your side and let ShopGlobal manage the marketplace front end, orders and customer experience abroad.</p>
+          <ul>
+            <li>Lowest operational lift for your team</li>
+            <li>Fast to launch a new SKU or region</li>
+            <li>Flexible as demand is validated</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capabilities reveal">
+        <div class="cap-row">
+          <h4>D2C sites &amp; local marketplaces</h4>
+          <p>Beyond the global platforms, we design, build and manage a branded D2C website for your brand in every region, and list you on the domestic marketplaces that matter locally — including Catch in Australia and Flipkart in India.</p>
+        </div>
+        <div class="cap-row">
+          <h4>Brand protection</h4>
+          <p>Our legal team, coordinated from Dubai, monitors and acts on unauthorized sellers and counterfeit listings across marketplaces, enforcing your IP so unlicensed sellers don't erode your pricing or reputation.</p>
+        </div>
+        <div class="cap-row">
+          <h4>Registration &amp; approvals</h4>
+          <p>Trademark filing, product registration and the regulatory documentation each region requires for your brand — handled before launch, not discovered after a listing gets suspended.</p>
+        </div>
+        <div class="cap-row">
+          <h4>Marketplace operations</h4>
+          <p>Listing management, inventory planning and fulfillment coordination across Amazon, Noon, Shein, Carrefour, Trendyol, Flipkart, Meesho, JioMart, Lazada, Shopee and Catch, run day to day by one team out of Dubai.</p>
+        </div>
+        <div class="cap-row">
+          <h4>Sourcing from the US &amp; UK</h4>
+          <p>Registered entities in New Jersey and Delaware (USA) and in the United Kingdom let us procure directly from US and European suppliers on your behalf. Partner warehouses and fulfillment centers in both the US and UK give us local receiving, consolidation and quality-check capacity right at the source, before stock is freighted onward.</p>
+        </div>
+        <div class="cap-row">
+          <h4>Quick commerce, Middle East &amp; India</h4>
+          <p>We list and fulfill on the fast-delivery channels reshaping both regions — Amazon Now, Noon Minutes and Supermall in the Gulf, and Blinkit, Zepto and Swiggy Instamart in India — so your brand shows up where shoppers are increasingly buying first.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE -->
+  <section class="compliance-sec" id="compliance">
+    <div class="wrap">
+      <div class="compliance-grid">
+        <div class="section-head reveal" style="margin-bottom:0;">
+          <p class="eyebrow">Compliance, done first</p>
+          <h2>Nothing goes live until compliance is cleared — in any of the five regions.</h2>
+          <p>Every brand goes through the same checklist before a single listing goes live in the Gulf, India, Singapore, Australia or Japan — so there are no surprise suspensions, blocked shipments, or compliance gaps once you're selling.</p>
+        </div>
+        <div class="checklist reveal">
+          <div class="check-row">
+            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 12L13 4" stroke="#F7F4EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>Trademark checks</span>
+          </div>
+          <div class="check-row">
+            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 12L13 4" stroke="#F7F4EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>Product registration</span>
+          </div>
+          <div class="check-row">
+            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 12L13 4" stroke="#F7F4EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>Importer / merchant of record</span>
+          </div>
+          <div class="check-row">
+            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 12L13 4" stroke="#F7F4EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>VAT / duty review</span>
+          </div>
+          <div class="check-row">
+            <span class="check-icon"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 12L13 4" stroke="#F7F4EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>Marketplace approval</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process-sec" id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it starts</p>
+        <h2>From first call to live listings in Dubai and beyond.</h2>
+        <p>A straightforward path — most brands are live in their first new region within weeks of signing off compliance.</p>
+      </div>
+      <div class="process-list reveal">
+        <div class="p-row">
+          <div class="p-num">01</div>
+          <div><h3>Discovery &amp; market fit</h3><p>We review your catalogue, pricing and existing sales data to flag which of the five regions fits your brand first.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">02</div>
+          <div><h3>Compliance &amp; registration</h3><p>Trademark and product registration, import/merchant of record setup, and the regulatory filings each target region requires.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">03</div>
+          <div><h3>Listing &amp; launch</h3><p>Marketplace listings go live on the channels that fit — from Amazon and Noon to Flipkart, Lazada and Catch — under the fulfillment model you've chosen.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">04</div>
+          <div><h3>Advertising &amp; optimization</h3><p>Our in-house team runs PPC, SEO and social to build visibility, while the dashboard tracks competitor and buyer data.</p></div>
+        </div>
+        <div class="p-row">
+          <div class="p-num">05</div>
+          <div><h3>Scale &amp; protect</h3><p>Inventory planning and WMS keep you in stock as demand grows, while our legal team monitors for counterfeit and unauthorized sellers.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="wrap">
+      <p class="eyebrow">Unlock limitless growth</p>
+      <h2>Let's get your brand live in the Gulf, India and Asia-Pacific.</h2>
+      <a href="#contact" class="btn btn-primary">Let's connect</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-sec" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Tell us about your brand.</h2>
+        <p>Send a note with your product category and the regions you're curious about, or use the details below to reach our Dubai or Mumbai HQ directly. We'll come back with which model fits and a rough timeline to launch.</p>
+        <div class="contact-line">
+          <div>
+            <span class="k">Company</span>
+            <span style="font-family:var(--mono);font-size:15px;color:var(--navy);">Shopglobal Technologies Private Limited</span>
+          </div>
+          <div>
+            <span class="k">Headquarters — Dubai</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Al+Matloob+Building+Al+Safa+1+Al+Safa+Dubai" target="_blank" rel="noopener" style="border-bottom:1px solid var(--line-light);">Al Matloob Building, Al Safa 1, Al Safa, Dubai, UAE</a>
+          </div>
+          <div>
+            <span class="k">Headquarters — Mumbai</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Building+no.8+Solitaire+Corporate+Park+Office+no.+842+4th+floor+8+Guru+Hargovindji+Rd+Chakala+Andheri+East+Mumbai+Maharashtra+400099+India" target="_blank" rel="noopener" style="border-bottom:1px solid var(--line-light);">Building no. 8, Solitaire Corporate Park, Office no. 842, 4th floor, 8 Guru Hargovindji Rd, Chakala, Andheri East, Mumbai, Maharashtra 400099, India</a>
+          </div>
+          <div>
+            <span class="k">Email</span>
+            <a href="mailto:customerservice@shopglobal247.com">customerservice@shopglobal247.com</a>
+          </div>
+          <div>
+            <span class="k">WhatsApp us on</span>
+            <a href="tel:+12017599708">+1 201 759 9708</a> / <a href="tel:+971502289562">+971 50 228 9562</a>
+          </div>
+          <div>
+            <span class="k">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/shopglobal-technologies-3a072128b/?skipRedirect=true" target="_blank" rel="noopener">linkedin.com/in/shopglobal-technologies</a>
+          </div>
+        </div>
+      </div>
+      <form class="form reveal" onsubmit="event.preventDefault(); this.querySelector('.btn-primary').textContent='Thanks — we\'ll be in touch';">
+        <div class="field">
+          <label for="name">Brand / contact name</label>
+          <input id="name" type="text" required placeholder="e.g. Jordan Reyes, Studio Loom">
+        </div>
+        <div class="field">
+          <label for="email">Work email</label>
+          <input id="email" type="email" required placeholder="you@brand.com">
+        </div>
+        <div class="field">
+          <label for="regions">Regions of interest</label>
+          <input id="regions" type="text" placeholder="e.g. UAE, India, Singapore">
+        </div>
+        <div class="field">
+          <label for="msg">A little about your brand</label>
+          <textarea id="msg" placeholder="Category, current US sales channels, rough volume"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Book a call</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="#top" class="logo">ShopGlobal</a>
+        <p>Dubai and Mumbai-headquartered cross-border e-commerce distribution partner helping global brands enter and scale across the Middle East, India, Singapore, Australia and Japan.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Site</h5>
+        <a href="#advantage">Why Us</a>
+        <a href="#market-entry">Market Entry</a>
+        <a href="#ai-ads">AI Ads</a>
+        <a href="#markets">Markets</a>
+        <a href="#models">Services</a>
+        <a href="#compliance">Compliance</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="foot-col">
+        <h5>Regions</h5>
+        <span>UAE (HQ) · KSA · GCC (Bahrain, Kuwait, Oman, Qatar)</span>
+        <span>India (HQ)</span>
+        <span>Singapore · Indonesia · Malaysia · Philippines</span>
+        <span>Australia · Japan</span>
+        <span>Africa (via Jumia)</span>
+      </div>
+      <div class="foot-col">
+        <h5>Sourcing</h5>
+        <span>New Jersey, USA</span>
+        <span>Delaware, USA</span>
+        <span>United Kingdom</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 ShopGlobal. All rights reserved.</span>
+      <span>Registered offices — UAE (HQ) · India (HQ) · Singapore · Australia · Japan · New Jersey (US) · Delaware (US) · UK</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const burger = document.getElementById('burgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    burger.setAttribute('aria-expanded', false);
+  }));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
